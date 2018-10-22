@@ -1,4 +1,4 @@
-@extends('layout.default')
+@extends('layouts.app')
 @section('content')
     <div class="card mt-4">
         <div class="card-title ml-4 mt-5"><h1>Contact</h1>

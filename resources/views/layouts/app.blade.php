@@ -5,7 +5,7 @@
 </head>
 <body>
 <header>
-    @include('includes.header')
+    @include('includes.mainNav')
 </header>
 <div class="container-fluid" style="margin-top:50px;">
     <main role="main">

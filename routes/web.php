@@ -11,17 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', 'PageController@home')->name('home');
 
+Route::get('/about', 'PageController@about')->name('about');
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
+Route::get('/contact', 'PageController@contact')->name('contact');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-
-Route::post('/contact','PagesController@store')->name('contact.store');
+Route::post('/contact', 'PageController@store')->name('contact.store');
